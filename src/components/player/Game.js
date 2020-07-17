@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-export const AdminTable = () => {
+export const Game = () => {
     return (
         <div>
-            AdminTable
+            Game
         </div>
     )
 }
@@ -17,4 +17,4 @@ const mapDispatchToProps = {
     
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AdminTable)
+export default connect(mapStateToProps, mapDispatchToProps)(Game)

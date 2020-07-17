@@ -5,7 +5,8 @@ import Login from '../auth/Login';
 import Alert from '../layout/Alert';
 import NotFound from '../layout/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
-
+import AdminTable from '../admin/AdminTable';
+import Game from '../player/Game';
 const Routes = props => {
   return (
     <section className="container">
@@ -13,6 +14,8 @@ const Routes = props => {
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/admin" component={AdminTable}/>
+        <Route exact path="/game" component= {Game}/>
         <Route component={NotFound} />
       </Switch>
     </section>
